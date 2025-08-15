@@ -46,6 +46,8 @@
     </script>
     
     <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="images/メインビジュアル.JPG" as="image">
+    <link rel="preload" href="images/POPON ロゴ.png" as="image">
 </head>
 <body>
     <!-- ヘッダー -->
@@ -74,7 +76,7 @@
     <!-- メインビジュアル -->
     <section class="hero">
         <div class="hero-background">
-            <img src="images/メインビジュアル.JPG" alt="メインビジュアル" class="hero-bg-image">
+            <img src="images/メインビジュアル.JPG" alt="メインビジュアル" class="hero-bg-image" loading="eager">
         </div>
         <div class="hero-overlay">
             <div class="hero-text-container">
@@ -95,21 +97,21 @@
             <div class="feature-cards">
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <img src="images/ハート.jpg" alt="ハート" class="feature-img">
+                        <img src="images/ハート.jpg" alt="ハート" class="feature-img" loading="lazy">
                     </div>
                     <h3 class="feature-title-highlight">笑顔あふれる</h3>
                     <p>赤ちゃんもママも自然と笑顔になる温かい雰囲気づくりを心がけています</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <img src="images/花1.jpg" alt="花" class="feature-img">
+                        <img src="images/花1.jpg" alt="花" class="feature-img" loading="lazy">
                     </div>
                     <h3 class="feature-title-highlight">落ち着いた空間</h3>
                     <p>ほっと一息つけるリラックスした環境で、ゆったりとした時間を過ごせます</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <img src="images/アクセス.jpg" alt="アクセス" class="feature-img">
+                        <img src="images/アクセス.jpg" alt="アクセス" class="feature-img" loading="lazy">
                     </div>
                     <h3 class="feature-title-highlight">アクセス良好</h3>
                     <p>JR東姫路駅から徒歩5分、駐車場完備でお車でもお越しいただけます</p>
@@ -144,7 +146,7 @@
                     
                     <div class="oil-info-new">
                         <div class="oil-image-new">
-                            <img src="images/ベビーオイル.JPEG" alt="ベビーオイル" class="oil-img-new">
+                            <img src="images/ベビーオイル.JPEG" alt="ベビーオイル" class="oil-img-new" loading="lazy">
                         </div>
                         <div class="oil-text-new">
                             <h4 class="oil-title">赤ちゃんにやさしいオイルを使用</h4>
@@ -154,7 +156,7 @@
                 </div>
                 
                 <div class="about-right">
-                    <img src="images/ベビーマッサージの効果.JPEG" alt="ベビーマッサージの効果" class="about-img-large">
+                    <img src="images/ベビーマッサージの効果.JPEG" alt="ベビーマッサージの効果" class="about-img-large" loading="lazy">
                 </div>
             </div>
         </div>
@@ -169,14 +171,14 @@
             </div>
             <div class="course-images">
                 <div class="course-image-container">
-                    <img src="images/ベビーマッサージ コース内容.jpg" alt="ベビーマッサージコース" class="course-detail-img">
+                    <img src="images/ベビーマッサージ コース内容.jpg" alt="ベビーマッサージコース" class="course-detail-img" loading="lazy">
                 </div>
                 <div class="course-image-container">
-                    <img src="images/おくるみタッチケア コース内容.jpg" alt="おくるみタッチケアコース" class="course-detail-img">
+                    <img src="images/おくるみタッチケア コース内容.jpg" alt="おくるみタッチケアコース" class="course-detail-img" loading="lazy">
                 </div>
             </div>
             <div class="payment-info">
-                <img src="images/現金.jpeg" alt="現金" class="payment-icon">
+                <img src="images/現金.jpeg" alt="現金" class="payment-icon" loading="lazy">
                 <p><strong>お支払い方法：</strong>現金のみ</p>
             </div>
         </div>
@@ -192,7 +194,7 @@
             <div class="instructor-content">
                 <div class="instructor-left">
                     <div class="instructor-image">
-                        <img src="images/田中紗理.JPEG" alt="田中紗理" class="instructor-img">
+                        <img src="images/田中紗理.JPEG" alt="田中紗理" class="instructor-img" loading="lazy">
                     </div>
                     <h3 class="instructor-name">講師名：田中 紗理</h3>
                 </div>
@@ -227,7 +229,7 @@
                     </div>
                 </div>
                 <div class="access-map">
-                    <img src="images/マップ.png" alt="アクセスマップ" class="map-image">
+                    <img src="images/マップ.png" alt="アクセスマップ" class="map-image" loading="lazy">
                 </div>
             </div>
         </div>
@@ -242,7 +244,7 @@
             </div>
             <div class="blog-content">
                 <div class="blog-image">
-                    <img src="images/ameba(ブログ).JPEG" alt="ブログ" class="blog-img">
+                    <img src="images/ameba(ブログ).JPEG" alt="ブログ" class="blog-img" loading="lazy">
                 </div>
                 <div class="blog-text">
                     <h3>日々の様子をお届けしています</h3>
@@ -266,7 +268,7 @@
                 <div class="contact-methods">
                     <div class="contact-method">
                         <div class="contact-icon">
-                            <img src="images/line.JPEG" alt="LINE" width="60" height="60">
+                            <img src="images/line.JPEG" alt="LINE" width="60" height="60" loading="lazy">
                         </div>
                         <h3>公式LINE</h3>
                         <p>お友だち追加で簡単にご連絡いただけます</p>
@@ -274,7 +276,7 @@
                     </div>
                     <div class="contact-method">
                         <div class="contact-icon">
-                            <img src="images/insta.JPEG" alt="Instagram" width="60" height="60">
+                            <img src="images/insta.JPEG" alt="Instagram" width="60" height="60" loading="lazy">
                         </div>
                         <h3>Instagram</h3>
                         <p>DMでのお問い合わせも承ります</p>
