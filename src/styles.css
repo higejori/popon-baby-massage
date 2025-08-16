@@ -1031,13 +1031,21 @@ body {
         display: flex;
     }
     
+    .nav ul {
+        background: none !important;
+        backdrop-filter: none !important;
+        border-radius: 0 !important;
+        padding: 0 !important;
+    }
+    
     .nav-menu {
         position: fixed;
         top: 70px;
         right: -100%;
         width: 280px;
         height: calc(100vh - 70px);
-        background: #ffffff;
+        background: #ffffff !important;
+        backdrop-filter: none !important;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
@@ -1046,6 +1054,7 @@ body {
         box-shadow: -5px 0 20px rgba(255, 140, 66, 0.15);
         z-index: 999;
         padding-top: 2rem;
+        opacity: 1 !important;
     }
     
     .nav-menu.active {
@@ -1257,9 +1266,19 @@ body {
         height: 65px;
     }
     
+    .nav ul {
+        background: none !important;
+        backdrop-filter: none !important;
+        border-radius: 0 !important;
+        padding: 0 !important;
+    }
+    
     .nav-menu {
         top: 65px;
         height: calc(100vh - 65px);
         width: 270px;
+        background: #ffffff !important;
+        backdrop-filter: none !important;
+        opacity: 1 !important;
     }
 }
