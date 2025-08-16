@@ -1035,9 +1035,9 @@ body {
         position: fixed;
         top: 70px;
         right: -100%;
-        width: 250px;
+        width: 280px;
         height: calc(100vh - 70px);
-        background: linear-gradient(135deg, rgba(255, 248, 240, 0.98) 0%, rgba(255, 245, 230, 0.98) 100%);
+        background: white;
         backdrop-filter: blur(15px);
         flex-direction: column;
         justify-content: flex-start;
@@ -1055,19 +1055,22 @@ body {
     
     .nav-menu li {
         margin: 0.8rem 0;
-        width: 80%;
+        width: 85%;
         text-align: center;
     }
     
     .nav-menu a {
-        font-size: 1rem;
-        padding: 1rem;
+        font-size: 0.9rem;
+        padding: 1rem 0.5rem;
         display: block;
         border-radius: 10px;
         background: rgba(255, 140, 66, 0.1);
         color: #ff8c42;
         font-weight: 600;
         transition: all 0.3s;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     
     .nav-menu a:hover {
@@ -1120,8 +1123,8 @@ body {
     }
     
     .feature-img {
-        width: 50px;
-        height: 50px;
+        width: 65px;
+        height: 65px;
     }
     
     .feature-card h3 {
@@ -1235,8 +1238,8 @@ body {
     }
     
     .feature-img {
-        width: 45px;
-        height: 45px;
+        width: 55px;
+        height: 55px;
     }
     
     .feature-card h3 {
@@ -1258,5 +1261,6 @@ body {
     .nav-menu {
         top: 65px;
         height: calc(100vh - 65px);
+        width: 270px;
     }
 }
