@@ -258,12 +258,32 @@ body {
     }
     
     .hero-message {
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+    }
+    
+    .btn {
+        padding: 8px 20px;
+        font-size: 0.9rem;
     }
     
     .about-content-new {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+    
+    .about-description h3 {
+        font-size: 1.3rem;
+        white-space: nowrap;
+    }
+    
+    .about-main-text {
+        font-size: 0.9rem;
     }
     
     .oil-info-new {
@@ -859,6 +879,11 @@ body {
     line-height: 1.7;
 }
 
+.btn-blog {
+    display: block;
+    margin: 0 auto;
+}
+
 /* お問い合わせ */
 .contact {
     padding: 80px 0;
@@ -942,14 +967,53 @@ body {
 
 /* レスポンシブ対応 */
 @media (max-width: 768px) {
-    .nav ul {
+    .header {
+        height: 80px;
+        overflow: hidden;
+    }
+    
+    .header .container {
+        padding: 0.5rem 15px;
+    }
+    
+    .header::before,
+    .header::after {
         display: none;
+    }
+    
+    .logo-image {
+        height: 50px;
+    }
+    
+    .logo-text h1 {
+        font-size: 1.4rem;
+    }
+    
+    .logo-text p {
+        font-size: 0.8rem;
+    }
+    
+    .nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.3rem;
+        padding: 0.3rem 0.5rem;
+        margin: 0;
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 15px;
+    }
+    
+    .nav a {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.5rem;
+        white-space: nowrap;
+        border-radius: 10px;
     }
     
     .hero {
         min-height: 500px;
         padding: 0;
-        margin-top: 60px;
+        margin-top: 80px;
     }
     
     .hero-overlay {
@@ -987,9 +1051,19 @@ body {
         gap: 2rem;
     }
     
+    .access-info h3 {
+        font-size: 1.4rem;
+        white-space: nowrap;
+    }
+    
     .course-images {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .payment-info {
+        margin-top: 0.5rem;
     }
     
     .container {
@@ -1025,7 +1099,30 @@ body {
         font-size: 2rem !important;
     }
     
-    .feature-cards,
+    .feature-cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    
+    .feature-card {
+        padding: 1.5rem 1rem;
+    }
+    
+    .feature-img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .feature-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .feature-card p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+    
     .contact-methods {
         grid-template-columns: 1fr;
     }
