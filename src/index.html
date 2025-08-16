@@ -61,13 +61,18 @@
                 </div>
             </div>
             <nav class="nav">
-                <ul>
-                    <li><a href="#about">ベビーマッサージとは</a></li>
-                    <li><a href="#courses">コース紹介</a></li>
-                    <li><a href="#instructor">講師紹介</a></li>
-                    <li><a href="#blog">ブログ</a></li>
-                    <li><a href="#access">アクセス</a></li>
-                    <li><a href="#contact">お問い合わせ</a></li>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#about" onclick="closeMenu()">ベビーマッサージとは</a></li>
+                    <li><a href="#courses" onclick="closeMenu()">コース紹介</a></li>
+                    <li><a href="#instructor" onclick="closeMenu()">講師紹介</a></li>
+                    <li><a href="#blog" onclick="closeMenu()">ブログ</a></li>
+                    <li><a href="#access" onclick="closeMenu()">アクセス</a></li>
+                    <li><a href="#contact" onclick="closeMenu()">お問い合わせ</a></li>
                 </ul>
             </nav>
         </div>
@@ -293,5 +298,21 @@
             <p>&copy; 2024 POPON ベビーマッサージ教室. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            const menuToggle = document.querySelector('.menu-toggle');
+            navMenu.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        }
+
+        function closeMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            const menuToggle = document.querySelector('.menu-toggle');
+            navMenu.classList.remove('active');
+            menuToggle.classList.remove('active');
+        }
+    </script>
 </body>
 </html>
