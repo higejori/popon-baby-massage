@@ -1037,8 +1037,7 @@ body {
         right: -100%;
         width: 280px;
         height: calc(100vh - 70px);
-        background: white;
-        backdrop-filter: blur(15px);
+        background: #ffffff;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
