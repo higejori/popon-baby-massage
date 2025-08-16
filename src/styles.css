@@ -1059,7 +1059,7 @@ body {
         border-left: 3px solid rgba(255, 140, 66, 0.2);
         box-shadow: -5px 0 20px rgba(255, 140, 66, 0.15);
         z-index: 999;
-        padding-top: 2rem;
+        padding: 3rem 0 1rem 0;
         opacity: 1 !important;
     }
     
@@ -1292,5 +1292,6 @@ body {
         background: #ffffff !important;
         backdrop-filter: none !important;
         opacity: 1 !important;
+        padding: 3rem 0 1rem 0;
     }
 }
