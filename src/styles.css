@@ -1038,6 +1038,12 @@ body {
         padding: 0 !important;
     }
     
+    /* モバイル用ナビゲーションの背景を確実に不透明にする */
+    .nav ul.nav-menu {
+        background: #ffffff !important;
+        backdrop-filter: none !important;
+    }
+    
     .nav-menu {
         position: fixed;
         top: 70px;
@@ -1271,6 +1277,12 @@ body {
         backdrop-filter: none !important;
         border-radius: 0 !important;
         padding: 0 !important;
+    }
+    
+    /* モバイル用ナビゲーションの背景を確実に不透明にする */
+    .nav ul.nav-menu {
+        background: #ffffff !important;
+        backdrop-filter: none !important;
     }
     
     .nav-menu {
