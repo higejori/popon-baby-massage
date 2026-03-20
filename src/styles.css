@@ -656,10 +656,14 @@ body {
 }
 
 .instructor-img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+    width: min(100%, 320px);
+    height: 260px;
+    object-fit: contain;
     border-radius: 15px;
+    background: #fff;
+    padding: 8px;
+    border: 2px solid #ffe4d6;
+    box-shadow: 0 5px 15px rgba(255, 140, 66, 0.12);
 }
 
 /* コース紹介 */
@@ -769,6 +773,8 @@ body {
 
 .instructor-image {
     margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
 }
 
 .instructor-name {
