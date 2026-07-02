@@ -166,7 +166,10 @@ body {
 
 .hero-photo {
     position: absolute;
-    inset: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: calc(100% - 96px); /* 下の帯はボタン置き場（写真の外） */
 }
 
 .hero-bg-image {
@@ -181,25 +184,26 @@ body {
 .hero-body {
     position: relative;
     z-index: 2;
-    min-height: 620px;
+    min-height: 660px;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    padding: 2.5rem 3rem;
+    padding: 2.8rem 3rem 1.4rem;
 }
 
 .hero-body .hero-text-container {
     align-self: center;
 }
 
-/* 要点カードとボタンは左下（赤ちゃんの顔は右下にあるため） */
+/* 要点カードは中央（講師と赤ちゃんの間の空間）に配置 */
 .hero-body .hero-info-bar {
-    margin-top: auto;
-    align-self: flex-start;
+    margin: auto 0;
+    align-self: center;
 }
 
+/* ボタンは中央寄せで写真下の帯に置く */
 .hero-body .hero-buttons {
-    align-self: flex-start;
+    align-self: center;
 }
 
 .hero-text-container {
@@ -208,30 +212,31 @@ body {
 }
 
 .hero-title {
-    font-size: 3.8rem;
+    font-size: 4.6rem;
     color: #ffffff;
     font-weight: 900;
-    margin: 0 0 0.2rem 0;
+    margin: 0 0 0.3rem 0;
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 
 .hero-subtitle {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     color: #ffffff;
-    margin: -0.5rem 0 0.8rem 0;
+    margin: -0.4rem 0 1rem 0;
     font-weight: 600;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
-    letter-spacing: 1px;
-    line-height: 1.2;
+    letter-spacing: 2px;
+    line-height: 1.25;
 }
 
 .hero-message {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     color: #ffffff;
     margin: 0;
     font-weight: bold;
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+    letter-spacing: 1.5px;
     line-height: 1.3;
 }
 
@@ -249,9 +254,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 0.35rem;
+    gap: 0.4rem;
     flex: 1;
-    padding: 0.9rem 1.4rem;
+    padding: 1rem 1.8rem;
     text-align: center;
 }
 
@@ -260,17 +265,18 @@ body {
 }
 
 .hero-info-label {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     color: #d95f1e;
     font-weight: 700;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
 }
 
 .hero-info-value {
-    font-size: 1rem;
+    font-size: 1.15rem;
     color: #2c3e50;
     font-weight: 700;
-    line-height: 1.35;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
     white-space: nowrap; /* 値は短い固定文言。変な位置での折返しを防ぐ */
 }
 
@@ -1152,6 +1158,7 @@ body {
 
     .hero-photo {
         position: static;
+        height: auto;
         aspect-ratio: 4 / 3;
     }
 
@@ -1168,7 +1175,7 @@ body {
     }
 
     .hero-body .hero-info-bar {
-        margin-top: 0;
+        margin: 0;
         align-self: center;
     }
 
