@@ -162,14 +162,12 @@ body {
     text-align: center;
     overflow: hidden;
     margin-top: 90px;
+    background: linear-gradient(135deg, #fff8f0 0%, #ffe8d6 100%);
 }
 
 .hero-photo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: calc(100% - 130px); /* 下の帯は要点カード＋ボタン置き場（写真の外） */
+    position: relative;
+    height: 540px;
 }
 
 .hero-bg-image {
@@ -181,33 +179,35 @@ body {
     filter: brightness(0.72); /* 文字を立たせるための薄いグレー */
 }
 
-.hero-body {
-    position: relative;
+/* 写真の上に重ねるのはタイトル群とキャッチコピーのみ（高さは.hero-photoと合わせる） */
+.hero-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 540px;
     z-index: 2;
-    min-height: 660px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1.5rem;
-    padding: 2.8rem 3rem 1.4rem;
-}
-
-.hero-body .hero-text-container {
-    align-self: center;
+    padding: 2.8rem 3rem;
 }
 
 /* キャッチコピーは中央（講師と赤ちゃんの顔の間の空間）に配置 */
-.hero-body > .hero-message {
+.hero-caption .hero-message {
     margin: auto 0;
     align-self: center;
 }
 
-/* 要点カードとボタンは横並びで写真下の帯に置く */
+/* 要点カードとボタンは写真の外（下の帯）に通常フローで置く */
 .hero-bottom-row {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
+    padding: 1.6rem 2rem;
 }
 
 .hero-text-container {
@@ -1171,20 +1171,21 @@ body {
         filter: none;
     }
 
-    .hero-body {
-        min-height: 0;
-        padding: 1.8rem 1.2rem 2rem;
+    .hero-caption {
+        position: static;
+        height: auto;
+        padding: 1.8rem 1.2rem 0;
         gap: 1.3rem;
-        background: linear-gradient(135deg, #fff8f0 0%, #ffe8d6 100%);
     }
 
-    .hero-body > .hero-message {
+    .hero-caption .hero-message {
         margin: 0;
     }
 
     .hero-bottom-row {
         flex-direction: column;
         gap: 1.3rem;
+        padding: 1.3rem 1.2rem 2rem;
     }
 
     .hero-title {
@@ -1351,9 +1352,13 @@ body {
         margin-top: 70px;
     }
 
-    .hero-body {
-        padding: 1.5rem 1rem 1.8rem;
+    .hero-caption {
+        padding: 1.5rem 1rem 0;
         gap: 1.1rem;
+    }
+
+    .hero-bottom-row {
+        padding: 1.1rem 1rem 1.8rem;
     }
 
     .hero-message {
