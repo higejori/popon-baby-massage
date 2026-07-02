@@ -169,7 +169,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    height: calc(100% - 96px); /* 下の帯はボタン置き場（写真の外） */
+    height: calc(100% - 130px); /* 下の帯は要点カード＋ボタン置き場（写真の外） */
 }
 
 .hero-bg-image {
@@ -195,15 +195,19 @@ body {
     align-self: center;
 }
 
-/* 要点カードは中央（講師と赤ちゃんの間の空間）に配置 */
-.hero-body .hero-info-bar {
+/* キャッチコピーは中央（講師と赤ちゃんの顔の間の空間）に配置 */
+.hero-body > .hero-message {
     margin: auto 0;
     align-self: center;
 }
 
-/* ボタンは中央寄せで写真下の帯に置く */
-.hero-body .hero-buttons {
-    align-self: center;
+/* 要点カードとボタンは横並びで写真下の帯に置く */
+.hero-bottom-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .hero-text-container {
@@ -1174,13 +1178,13 @@ body {
         background: linear-gradient(135deg, #fff8f0 0%, #ffe8d6 100%);
     }
 
-    .hero-body .hero-info-bar {
+    .hero-body > .hero-message {
         margin: 0;
-        align-self: center;
     }
 
-    .hero-body .hero-buttons {
-        align-self: center;
+    .hero-bottom-row {
+        flex-direction: column;
+        gap: 1.3rem;
     }
 
     .hero-title {
