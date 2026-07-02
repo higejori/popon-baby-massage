@@ -52,8 +52,16 @@
       "url": "https://animated-haupia-9c5ff9.netlify.app",
       "serviceType": "ベビーマッサージ教室",
       "areaServed": "姫路市",
-      "priceRange": "3000-8000円",
-      "openingHours": "Mo-Su"
+      "priceRange": "¥3,000〜¥8,000",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "コース",
+        "itemListElement": [
+          { "@type": "Offer", "name": "ベビーマッサージ（1回）", "price": "3000", "priceCurrency": "JPY" },
+          { "@type": "Offer", "name": "ベビーマッサージ（3回コース）", "price": "8000", "priceCurrency": "JPY" },
+          { "@type": "Offer", "name": "おくるみタッチケア（1回・おくるみ付き）", "price": "5000", "priceCurrency": "JPY" }
+        ]
+      }
     }
     </script>
     
@@ -205,12 +213,51 @@
                 <h2>コース紹介</h2>
                 <div class="title-underline"></div>
             </div>
-            <div class="course-images">
-                <div class="course-image-container">
-                    <img src="images/ベビーマッサージ コース内容2.jpg" alt="ベビーマッサージコース" class="course-detail-img" loading="lazy">
+            <div class="course-list">
+                <div class="course-item">
+                    <div class="course-card">
+                        <h3 class="course-name">ベビーマッサージ</h3>
+                        <p class="course-target">対象：生後2ヶ月〜2歳頃のお子さまとママ</p>
+                        <div class="course-prices">
+                            <div class="course-price">
+                                <span class="price-label">1回</span>
+                                <span class="price-value">3,000<small>円</small></span>
+                            </div>
+                            <div class="course-price is-recommended">
+                                <span class="price-badge">おすすめ</span>
+                                <span class="price-label">3回コース</span>
+                                <span class="price-value">8,000<small>円</small></span>
+                            </div>
+                        </div>
+                        <ul class="course-notes">
+                            <li>所要時間：60〜90分</li>
+                            <li>3回コースは足形or手形のプレゼント付き</li>
+                            <li>お友達との参加も大歓迎</li>
+                        </ul>
+                    </div>
+                    <div class="course-image-container">
+                        <img src="images/ベビーマッサージ コース内容2.jpg" alt="ベビーマッサージコースの案内（1回3,000円・3回8,000円）" class="course-detail-img" loading="lazy">
+                    </div>
                 </div>
-                <div class="course-image-container">
-                    <img src="images/おくるみタッチケア コース内容.jpg" alt="おくるみタッチケアコース" class="course-detail-img" loading="lazy">
+                <div class="course-item">
+                    <div class="course-card">
+                        <h3 class="course-name">おくるみタッチケア</h3>
+                        <p class="course-target">対象：妊娠中〜生後2ヶ月のママと赤ちゃん</p>
+                        <div class="course-prices">
+                            <div class="course-price">
+                                <span class="price-label">1回</span>
+                                <span class="price-value">5,000<small>円</small></span>
+                            </div>
+                        </div>
+                        <ul class="course-notes">
+                            <li>所要時間：60〜90分</li>
+                            <li>エイデン&アネイのおくるみプレゼント付き</li>
+                            <li>妊娠中の方はお人形を使ってレッスン</li>
+                        </ul>
+                    </div>
+                    <div class="course-image-container">
+                        <img src="images/おくるみタッチケア コース内容.jpg" alt="おくるみタッチケアコースの案内（1回5,000円・おくるみプレゼント付き）" class="course-detail-img" loading="lazy">
+                    </div>
                 </div>
             </div>
             <div class="payment-info">
