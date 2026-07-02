@@ -293,8 +293,8 @@
                             <img src="images/line.JPEG" alt="LINE" width="60" height="60" loading="lazy">
                         </div>
                         <h3>公式LINE</h3>
-                        <p style="white-space: nowrap;">お友だち追加で簡単にご連絡いただけます</p>
-                        <a href="https://line.me/R/ti/p/@373naeod?oat_content=url&ts=06261348" target="_blank" class="btn btn-line">LINEで問い合わせ</a>
+                        <p>希望コースとご希望日時を送るだけでOKです</p>
+                        <a href="https://line.me/R/ti/p/@373naeod?oat_content=url&ts=06261348" target="_blank" class="btn btn-line" onclick="gtag('event', 'line_click', {'event_category': 'cta', 'event_label': 'contact_section'});">LINEで問い合わせ</a>
                     </div>
                     <div class="contact-method">
                         <div class="contact-icon">
@@ -315,6 +315,12 @@
             <p>&copy; 2024 POPON ベビーマッサージ教室. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- スマホ用 追従LINEボタン -->
+    <a href="https://line.me/R/ti/p/@373naeod?oat_content=url&ts=06261348" target="_blank" class="line-sticky-btn" onclick="gtag('event', 'line_click', {'event_category': 'cta', 'event_label': 'sticky_button'});">
+        <img src="images/line.JPEG" alt="" class="line-sticky-icon" loading="lazy">
+        LINEで予約・空き確認
+    </a>
 
     <script>
         function toggleMenu() {
