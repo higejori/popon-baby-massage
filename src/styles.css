@@ -835,6 +835,30 @@ body {
     margin-left: 2px;
 }
 
+.course-gift {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+    margin: 0;
+}
+
+.course-gift-photo {
+    width: 78px;
+    height: 78px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ffe4d6;
+}
+
+.course-gift figcaption {
+    font-size: 0.68rem;
+    color: #b3541e;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.25;
+}
+
 .course-notes {
     list-style: none;
     margin: 0;
