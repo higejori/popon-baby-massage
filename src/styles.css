@@ -792,6 +792,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center; /* 隣の写真で枠が伸びても文字を上下中央に */
     gap: 0.1rem;
     min-width: 130px;
 }
