@@ -1248,7 +1248,14 @@ body {
         padding: 8px 16px;
         font-size: 0.85rem;
     }
-    
+
+    /* 問い合わせボタンはタップしやすく（44px以上確保・カード幅いっぱい） */
+    .contact-method .btn {
+        display: block;
+        padding: 13px 16px;
+        font-size: 1rem;
+    }
+
     .title-with-line h2 {
         font-size: 2rem;
     }
@@ -1389,7 +1396,13 @@ body {
         padding: 6px 12px;
         font-size: 0.8rem;
     }
-    
+
+    .contact-method .btn {
+        display: block;
+        padding: 13px 16px;
+        font-size: 1rem;
+    }
+
     .title-with-line h2 {
         font-size: 1.6rem;
     }
