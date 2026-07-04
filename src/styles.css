@@ -479,6 +479,7 @@ body {
 
 .about-right {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -584,6 +585,13 @@ body {
     line-height: 1.4;
     margin-bottom: 0;
     text-align: left;
+}
+
+.about-img-note {
+    margin-top: 0.6rem;
+    font-size: 0.85rem;
+    color: #999;
+    text-align: center;
 }
 
 .about-img-large {
@@ -1297,10 +1305,11 @@ body {
         text-align: center;
     }
     
-    .about-img-large {
-        width: 90%;
+    /* SPは効果リスト（テキスト）に一本化：画像内文字が判読不能＆内容重複のため非表示 */
+    .about-right {
+        display: none;
     }
-    
+
     .about-content-new,
     .instructor-content,
     .access-content,
