@@ -58,7 +58,7 @@ body {
     transform: scale(1.05);
 }
 
-.logo-text h1 {
+.logo-text .logo-title {
     font-size: 1.8rem;
     color: #ff8c42;
     font-weight: 800;
@@ -596,7 +596,7 @@ body {
 .about-img-note {
     margin-top: 0.6rem;
     font-size: 0.85rem;
-    color: #999;
+    color: #777;
     text-align: center;
 }
 
@@ -916,13 +916,13 @@ body {
 .map-link-note {
     margin-top: 0.6rem;
     font-size: 0.85rem;
-    color: #999;
+    color: #777;
 }
 
 /* ブログ */
 .blog {
     padding: 80px 0;
-    background: #fff;
+    background: #fff8f0;
 }
 
 .blog .title-with-line {
@@ -1167,7 +1167,7 @@ body {
         height: 45px;
     }
     
-    .logo-text h1 {
+    .logo-text .logo-title {
         font-size: 1.3rem;
     }
     
@@ -1613,7 +1613,7 @@ body {
 
 .voices-note {
     text-align: center;
-    color: #999;
+    color: #777;
     font-size: 0.8rem;
     margin-top: 1.5rem;
 }
