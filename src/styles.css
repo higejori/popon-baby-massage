@@ -131,6 +131,18 @@ body {
     width: 80%;
 }
 
+/* 最右の「お問い合わせ」は予約CTAとしてオレンジ塗りで強調 */
+.nav ul li:last-child a {
+    background: #ff8c42;
+    color: #ffffff;
+    border-color: #ff8c42;
+}
+
+.nav ul li:last-child a:hover {
+    background: #e67a3a;
+    color: #ffffff;
+}
+
 /* メインビジュアル */
 /* PC: 全面写真＋オーバーレイ。タイトル群は最上部中央、要点カードとボタンは
    左下に寄せて赤ちゃんの顔に被らないようにする */
