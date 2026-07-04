@@ -1074,6 +1074,73 @@ body {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
+/* タブレット幅（769〜1024px）は横並びナビが収まらないためハンバーガーに切替 */
+@media (max-width: 1024px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav ul {
+        background: none !important;
+        backdrop-filter: none !important;
+        border-radius: 0 !important;
+        padding: 0 !important;
+    }
+
+    .nav ul.nav-menu {
+        background: #ffffff !important;
+        backdrop-filter: none !important;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 90px;
+        right: -100%;
+        width: 280px;
+        height: calc(100vh - 90px);
+        background: #ffffff !important;
+        backdrop-filter: none !important;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        transition: 0.3s;
+        border-left: 3px solid rgba(255, 140, 66, 0.2);
+        box-shadow: -5px 0 20px rgba(255, 140, 66, 0.15);
+        z-index: 999;
+        padding: 3rem 0 1rem 0 !important;
+        opacity: 1 !important;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-menu li {
+        margin: 0.1rem 0;
+        width: 85%;
+        text-align: center;
+    }
+
+    .nav-menu a {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.5rem;
+        display: block;
+        border-radius: 10px;
+        background: rgba(255, 140, 66, 0.1);
+        color: #ff8c42;
+        font-weight: 600;
+        transition: all 0.3s;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .nav-menu a:hover {
+        background: rgba(255, 140, 66, 0.2);
+        transform: translateY(-2px);
+    }
+}
+
 /* レスポンシブ対応 */
 @media (max-width: 768px) {
     .container {
@@ -1102,73 +1169,12 @@ body {
         font-size: 0.75rem;
     }
     
-    .menu-toggle {
-        display: flex;
-    }
-    
-    .nav ul {
-        background: none !important;
-        backdrop-filter: none !important;
-        border-radius: 0 !important;
-        padding: 0 !important;
-    }
-    
-    /* モバイル用ナビゲーションの背景を確実に不透明にする */
-    .nav ul.nav-menu {
-        background: #ffffff !important;
-        backdrop-filter: none !important;
-    }
-    
+    /* ハンバーガー本体は1024px側で定義。ここではヘッダー高70pxに合わせる調整のみ */
     .nav-menu {
-        position: fixed;
         top: 70px;
-        right: -100%;
-        width: 280px;
         height: calc(100vh - 70px);
-        background: #ffffff !important;
-        backdrop-filter: none !important;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
-        transition: 0.3s;
-        border-left: 3px solid rgba(255, 140, 66, 0.2);
-        box-shadow: -5px 0 20px rgba(255, 140, 66, 0.15);
-        z-index: 999;
-        padding: 3rem 0 1rem 0 !important;
-        padding-top: 3rem !important;
-        padding-bottom: 1rem !important;
-        opacity: 1 !important;
     }
-    
-    .nav-menu.active {
-        right: 0;
-    }
-    
-    .nav-menu li {
-        margin: 0.1rem 0;
-        width: 85%;
-        text-align: center;
-    }
-    
-    .nav-menu a {
-        font-size: 0.9rem;
-        padding: 0.5rem 0.5rem;
-        display: block;
-        border-radius: 10px;
-        background: rgba(255, 140, 66, 0.1);
-        color: #ff8c42;
-        font-weight: 600;
-        transition: all 0.3s;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-    
-    .nav-menu a:hover {
-        background: rgba(255, 140, 66, 0.2);
-        transform: translateY(-2px);
-    }
-    
+
     /* スマホは写真が上・文字が下のスプリット型に戻す */
     .hero {
         margin-top: 70px;
