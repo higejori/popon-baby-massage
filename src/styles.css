@@ -1241,9 +1241,9 @@ body {
     }
     
     .hero-message {
-        font-size: 1.05rem;
+        font-size: 1.3rem;
     }
-    
+
     .hero-buttons {
         flex-direction: row;
         gap: 1rem;
@@ -1391,7 +1391,7 @@ body {
     }
 
     .hero-message {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .hero-info-value {
