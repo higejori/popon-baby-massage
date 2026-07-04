@@ -894,57 +894,6 @@ body {
     box-shadow: 0 5px 15px rgba(255, 140, 66, 0.1);
 }
 
-/* ブログ */
-.blog {
-    padding: 80px 0;
-    background: #fff;
-}
-
-.blog .title-with-line {
-    margin-bottom: 3rem;
-}
-
-.blog .title-with-line h2 {
-    margin: 0 0 0.3rem 0;
-}
-
-.blog-content {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 3rem;
-    align-items: center;
-}
-
-.blog-image {
-    text-align: center;
-}
-
-.blog-img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.blog-text h3 {
-    color: #ff8c42;
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-}
-
-.blog-text p {
-    color: #666;
-    margin-bottom: 1rem;
-    line-height: 1.7;
-}
-
-.btn-blog {
-    display: inline-block;
-    margin: 0 auto;
-    width: auto;
-}
-
 /* お問い合わせ */
 .contact {
     padding: 80px 0;
@@ -1007,15 +956,6 @@ body {
 
 .btn-instagram:hover {
     background: #d02340;
-}
-
-.btn-blog {
-    background: #ff6b8a;
-    color: white;
-}
-
-.btn-blog:hover {
-    background: #e85a7a;
 }
 
 /* フッター */
@@ -1292,8 +1232,7 @@ body {
     
     .about-content-new,
     .instructor-content,
-    .access-content,
-    .blog-content {
+    .access-content {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
@@ -1314,20 +1253,6 @@ body {
     
     .payment-info {
         margin-top: 0.3rem;
-    }
-    
-    .blog-text h3 {
-        font-size: 1.1rem;
-    }
-    
-    .blog-img {
-        width: 80px;
-        height: 80px;
-    }
-    
-    .btn-blog {
-        font-size: 0.85rem;
-        padding: 8px 16px;
     }
     
     .container {
